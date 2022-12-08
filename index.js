@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 8080
 const mongoose = require('mongoose')
 const morgan = require('morgan')
 const databaseConfig = require('./config/database')
@@ -30,7 +30,7 @@ app.get('/chillMode/getRandomWord', (req, res) => {
   res.json(chillMode[randomIndex])
 })
 
-app.get('/godMode/getRandomWord', (req, res) => {
+app.get('https://clean-pilot-369605.el.r.appspot.com/godMode/getRandomWord', (req, res) => {
   const randomIndex = Math.floor(Math.random() * godMode.length)
   res.json(godMode[randomIndex])
 })
