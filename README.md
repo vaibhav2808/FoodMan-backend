@@ -1,4 +1,4 @@
-# FoodMan
+# FoodMan-backend
 
 Backend for Foodman game.
 
